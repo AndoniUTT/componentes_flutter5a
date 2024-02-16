@@ -10,41 +10,28 @@ class HomeScreen extends StatelessWidget {
         title: const Text('App de componentes de flutter'),
       ),
         body: ListView(
-          children: const [
-            Text('Hoola mundo'),
-            Text('Hoola mundo'),
-            Text('Hoola mundo'),
-            Text('Hoola mundo'),
-            Text('Hoola mundo'),
-            Text('Hoola mundo'),
-            Text('Hoola mundo'),
-            Text('Hoola mundo'),
-            Text('Hoola mundo'),
-            Text('Hoola mundo'),
-            Text('Hoola mundo'),
-            Text('Hoola mundo'),
-            Text('Hoola mundo'),
-            Text('Hoola mundo'),
-            Text('Hoola mundo'),
-            Text('Hoola mundo'),
-            Text('Hoola mundo'),
-            Text('Hoola mundo'),
-            Text('Hoola mundo'),
-            Text('Hoola mundo'),
-            Text('Hoola mundo'),
-            Text('Hoola mundo'),
-            Text('Hoola mundo'),
-            Text('Hoola mundo'),
-            Text('Hoola mundo'),
-            Text('Hoola mundo'),
-            Text('Hoola mundo'),
-            Text('Hoola mundo'),
-            Text('Hoola mundo'),
-            Text('Hoola mundo'),
-            Text('Hoola mundo'),
-            Text('Hoola mundo'),
-            Text('Hoola mundo'),
-            ],)
+          children: const <Widget> [
+            ListTile(
+              title: Text('Entradas'),
+              subtitle: Text('Recuperar contraseñas'),
+              leading: Icon(Icons.input_rounded),
+              trailing: Icon(Icons.arrow_right_alt_outlined),
+            ),
+            Divider(),
+            ListTile(
+              title: Text('Lista infinita'),
+              subtitle: Text('Recuperar muchos elementos'),
+              leading: Icon(Icons.list_alt_sharp),
+              trailing: Icon(Icons.arrow_right_outlined),
+            ),
+            ListTile(
+              title: Text('Notificaciones'),
+              subtitle: Text('Manejo de notificaciones'),
+              leading: Icon(Icons.notification_important),
+              trailing: Icon(Icons.arrow_right_outlined),
+            )
+            ],
+          ),
       );
   }
 }
