@@ -14,7 +14,6 @@ class MainApp extends StatelessWidget {
         appBarTheme: const AppBarTheme(color: Color.fromARGB(255, 232, 118, 255)),
         textTheme: const TextTheme(
           headlineLarge: TextStyle(
-            fontFamily: 'sans-serif',
             fontSize: 26.0,
             fontWeight: FontWeight.bold,
             color: Color.fromARGB(255, 0, 0, 0),
