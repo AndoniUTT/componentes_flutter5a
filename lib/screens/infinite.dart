@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 
-class _InfiniteList extends StatefulWidget {
-  const _InfiniteList({super.key});
+class Infinite extends StatefulWidget {
+  const Infinite({super.key});
 
   @override
-  State<_InfiniteList> createState() => __InfiniteListState();
+  State<Infinite> createState() => _InfiniteState();
 }
 
-class __InfiniteListState extends State<_InfiniteList> {
+class _InfiniteState extends State<Infinite> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const Center(
+      child: Text('Lista Infinita'),
+    );
   }
 }
